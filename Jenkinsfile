@@ -18,7 +18,7 @@ node {
 
 	      echo "projectKey: ${projectKey}"
 
-	      sh "${scannerHome}/bin/sonar -D sonar.projectKey=${projectKey}  -D sonar.sources=. -D sonar.host.url='http://52.66.149.185:9000' -D sonar.exclusions=bootstrap/**,config/**,database/**,docker/**,public/**,storage/**,tests/**,vendor/**"
+	      sh "${scannerHome}/bin/sonar-scanner -D sonar.projectKey=${projectKey}  -D sonar.sources=. -D sonar.host.url='http://52.66.149.185:9000' -D sonar.exclusions=bootstrap/**,config/**,database/**,docker/**,public/**,storage/**,tests/**,vendor/**"
 		  //stash includes: ".sonar/report-task.txt", name: 'sonar'
         
         
