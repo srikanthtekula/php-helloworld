@@ -7,7 +7,7 @@ String[] arr = {"Rohit","Shikar","Virat","Dhoni"};
         for(int i=0;i<8;i++) {       
   
 //Here, no element is present at the iteration number arr.length, i.e 4  
-             System.out.println(arr[i]);      
+             System.out.println(opt[i]);      
 //So it will throw ArrayIndexOutOfBoundException at iteration 4           
         }  
   
